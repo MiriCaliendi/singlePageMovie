@@ -1,0 +1,224 @@
+$principale: #252529;
+$secondario: #8b8b9f;
+$giallo:#f5d365;
+$bianco: #FFFFFF;
+
+*{
+    box-sizing:border-box;
+}
+
+html, body {
+    font-family: "Open Sans", sans-serif;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.wrapper{
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+h1, h2, h3{
+    font-weight: 300;
+}
+.navbar {
+    font-size: 18px;
+    background: rgb(124,121,121);
+    background-image: linear-gradient(0deg, rgba(124,121,121,1) 0%, rgba(0,0,0,1) 100%);
+    padding-bottom: 10px;
+}
+.titleWebPage{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Cinzel', serif;
+    color: $bianco;
+}
+.mainNav {
+    list-style-type: none;
+    display: none;
+}
+
+.navLinks{
+    text-decoration: none;
+    color: $bianco;
+}
+.logo img{
+    max-width: 100px;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.mainNav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbarToggle {
+    position: absolute;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+#banner{
+    background: url(https://i2.res.24o.it/images2010/Editrice/ILSOLE24ORE/ILSOLE24ORE/2020/02/25/Impresa%20e%20Territori/ImmaginiWeb/Ritagli/AdobeStock_189677235-k4XH--1020x533@IlSole24Ore-Web.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 6.5em 0;
+    #bannerContentWrapper{
+        width: 900px;
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #poster{
+        width: 275px;
+        position: relative;
+        float: left;
+        .imgPosterPrincipale{
+            width: 100%;
+            max-width: 100%;
+            border-radius: .5em;
+        }
+    }
+    #content{
+        float: left;
+        width: 500px;
+        margin-left: 100px;
+        .title{
+            display: inline;
+            font-size: 1.75em;
+            color: $bianco;
+        }
+        .ratings{
+            display:inline;
+            margin-left: 1em;
+            i{
+                color: $giallo;
+                font-size: 1.35em;
+                margin: 0 .15em;
+            }
+            .inactive{
+                color: #48494d;
+            }
+        }
+        .description{
+            color: #bbbebf;
+            font-size: 1em;
+            line-height: 2;
+        }
+        .info{
+            color: $bianco;
+            font-size: .8em;
+            font-weight: 700;
+            margin-top: 3em;
+        }
+    }
+}
+#ultimiFilmUsciti, #inArrivoProssimamente{
+    padding: 5em 0;
+    header{
+        padding: 0 0 1.5em 0;
+        h2, .mostraDiPiu{
+            display: inline;
+        }
+        h2{
+            font-size: 1.75em;
+        }
+        .mostraDiPiu{
+            float: right;
+            font-size: .8em;
+            margin: .75em 3.5% 0 0;
+        }
+    }
+}
+#ultimiFilmUsciti{
+    border-bottom: 1px solid #d4d4d4;
+}
+.row{
+    width: 100%;
+    .post{
+        width: 14%;
+        float: left;
+        margin-right: 2.5%;
+        img{
+            width: 100%;
+            max-width: 100%;
+            border-radius: .5em;
+        }
+        .title{
+            font-size: 1.25em;
+            margin: 1em 0 0 0;
+            color: $principale;
+        }
+    }
+}
+.newsletter{
+    padding: 5em 0;
+    text-align: center;
+    background-color: #2a2a2e;
+    .newsletter_inner{
+        width: 600px;
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 1.75em;
+        color: $bianco;
+    }
+    .iscriviti{
+        margin-top: 3em;
+        input[type="text"], input[type="email"] {
+            width: 48%;
+            margin: 0 .5%;
+            height: 3.25em;
+            border: none;
+            outline: none;
+            border-radius: .3em;
+            background: #404043;
+            padding: .5em 1.25em;
+            font-size: .8em;
+            color: $bianco;
+        }
+        .button{
+            border: none;
+            outline: none;
+            padding: 1em 4.5em;
+            border-radius: 2em;
+            background: $giallo;
+            color: $bianco;
+            font-weight: 700;
+            font-size: .9em;
+            margin-top: 3em;
+        }
+        #mainFooter{
+            padding: 2.5em 0;
+            text-align: center;
+        }
+        .links{
+            color: $secondario;
+            font-size: .75em;
+            text-decoration: none;
+            margin: 0 .5em;
+        }
+        &:hover{
+            color: $giallo;
+        }
+    }
+}

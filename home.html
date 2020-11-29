@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Scopri le migliori recensioni dei film appena usciti">
+    <meta name="author" content="Movie Studio Production">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Movie Studio Production </title>
+</head>
+
+<body>
+    <div id="forSchedaFim">
+        <header id="topHeader" class="clearfix">
+            <div class="wrapper">
+                <h1 class="titleWebPage">Movie Studio Production</h1>
+                <!--icona film in stile burger menu-->
+                <a href="#" class="navbarToggle">
+                    <i class="fa fa-film" aria-hidden="true"></i>
+                </a>
+                <!--MENU-->
+                <nav class="mainNav">
+                    <a href="#oraInSala" class="navLinks">Ora in sala</a>
+                    <a href="#prossimamente" class="navLinks">Prossimamente</a>
+                    <a href="#newsletter" class="navLinks">Newsletter</a>
+                </nav>
+            </div>
+        </header>
+        <div id="banner">
+            <!--<div id="poster"></div>-->
+            <p>
+                <span id="spanMaxFont">Non vuoi perderti le ultime <b>novità sul mondo del cinema?</b></span>
+                <br>
+                <br> Nemmeno noi! Ecco perché ci informiamo quotidianamente per <span><b>aggiornarti sulle ultime
+                        notizie</b></span> che trapelano dai corridoi cinematografici.
+                <br>
+                <span><b>Fai click sulle locandine</b></span> per guardare il trailer e
+                <span><b>scoprire tutte le informazioni</b></span> dei film appena usciti e dei prossimi
+                in sala.
+            </p>
+        </div>
+
+        <!--Sezione ora in sala-->
+        <section id="ultimiFilmUsciti">
+            <div class="wrapper">
+                <a name="oraInSala"></a>
+                <a class="noStyle" href="#oraInSala">
+                    <h2>Ora in sala</h2>
+                </a>
+                <div class="jumbotron">
+                    <div>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5" id="postOraInSala">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!--Sezione prossimamente-->
+        <section id="inArrivoProssimamente">
+            <div class="wrapper">
+                <a name="prossimamente"></a>
+                <a class="noStyle" href="#prossimamente">
+                    <h2>Prossimamente</h2>
+                </a>
+                <div class="jumbotron">
+                    <div>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5" id="postProssimamente">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--sezione newsletter-->
+        <section id="newsletter">
+            <div class="newsletter_inner">
+                <a name="newsletter"></a>
+                <h2>Rimani sempre aggiornato sulle ultime novità del mondo cinematografico.
+                    <br>Iscriviti alla newsletter!</h2>
+                <div class="iscriviti">
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="Email">
+                    <button onclick="manageClick()" class="button">Iscriviti</button>
+                </div>
+                <div id="onClickNewsletter"></div>
+            </div>
+        </section>
+
+
+        <!--Footer-->
+        <footer id="mainFooter">
+            <p>Sede legale: Via del Progresso, 30 - 35127 Padova Italy | Sede operativa: Via del Progresso, 30 -
+                35127
+                Padova Italy Tel. + 39 049 8808289 - Fax + 39 049 8826581 P.IVA 03796490286</p>
+            <div class="links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+
+    <!--Scrips JS-->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script defer src="assets/js/main.js"></script>
+</body>
+
+</html>

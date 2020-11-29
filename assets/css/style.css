@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+* {
+  box-sizing: border-box;
+}
+html, body {
+  font-family: 'Catamaran', sans-serif;
+}
+
+/* Menu, Titolo pagina */
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+h1, h2, h3 {
+  font-weight: 300;
+}
+#topHeader{
+  padding: 1.5em 0;
+}
+.mainNav{
+  float: right;
+  display: block;
+  font-size: 1.5em;
+  padding-top: 1em;
+}
+.mainNav a {
+  text-decoration: none;
+  color: #252529;
+  margin-left: 1em;
+}
+.mainNav a:hover {
+  text-decoration: none;
+  color: #f5d365;
+}
+.titleWebPage {
+  display: inline;
+  display: block;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Cinzel', serif;
+  color: #252529;
+}
+.navbarToggle {
+  display: none;
+}
+
+/* Sezione generale */
+#banner {
+  box-shadow: 5px 5px 15px 4px #252529;
+  background-image: url(https://a-static.besthdwallpaper.com/palloncino-rosso-di-pennywise-sfondo-3000x2000-9871_42.jpg);
+  height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#banner p{
+  text-shadow: 3px 3px 5px black;
+  padding-top: 130px;
+  font-size: 1.40em;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+#banner p span{
+  color: #f5d365;
+}
+#spanMaxFont{
+  font-size: 1.60em;
+  color: white;
+}
+
+/* Ora in sala, prossimamente */
+#ultimiFilmUsciti, #inArrivoProssimamente {
+  padding: 5em 0;
+}
+#ultimiFilmUsciti h2, #inArrivoProssimamente h2 {
+  text-decoration: none;
+  color: #252529;
+  font-size: 1.75em;
+}
+.noStyle:hover{
+  text-decoration: none;
+  color: #252529;
+}
+.jumbotron{
+  align-items: center;
+  text-align: center;
+}
+.imgOraInSala {
+  box-shadow: 5px 5px 15px 4px #999;
+  width: 200px;
+  height: 250px;
+  padding: 10px;
+}
+.titleFilm {
+  font-size: 1.25em;
+  margin: 0.5em 0 1.5em 0;
+  color: #252529;
+}
+
+/*scheda film*/
+.containerSF{
+  display: flex;
+  flex-flow: column wrap;
+  border: 2px solid #e6e9ec;
+  border-radius: 20px;
+  margin: 30px;
+  background-color: #e6e9ec;
+}
+.trilerSF{
+  margin: 20px;
+}
+.titleSF{
+  font-size: 1.5em;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.dateSF, .yearSF, .timeSF, .ratingsSF, .genresSF, .authorSF, .collaborationSF, .distributionSF, .reviewSF{
+  margin-left: 20px;
+}
+.buttonSF {
+  border: none;
+  outline: none;
+  padding: 0.5em 2.5em;
+  border-radius: 2em;
+  background: #f5d365;
+  color: #252529;
+  font-weight: 700;
+  font-size: .9em;
+  margin: 1em;
+  box-shadow: 5px 5px 15px 4px #999;
+}
+
+/* Newsletter */
+#newsletter {
+  padding: 5em 0;
+  text-align: center;
+  background-color: #2a2a2e;
+  display: flex;
+  flex-wrap: wrap;
+}
+#newsletter .newsletter_inner {
+  width: 600px;
+  margin: 0 auto;
+}
+#newsletter h2 {
+  font-size: 1.75em;
+  color: #FFFFFF;
+}
+#newsletter .iscriviti {
+  margin-top: 3em;
+}
+#newsletter .iscriviti input[type="text"], #newsletter .iscriviti input[type="email"] {
+  width: 48%;
+  margin: 0 .5%;
+  height: 3.25em;
+  border: none;
+  outline: none;
+  border-radius: .3em;
+  background: #404043;
+  padding: .5em 1.25em;
+  font-size: .8em;
+  color: #FFFFFF;
+}
+#newsletter .iscriviti .button {
+  border: none;
+  outline: none;
+  padding: 1em 4.5em;
+  border-radius: 2em;
+  background: #f5d365;
+  color: #252529;
+  font-weight: 700;
+  font-size: .9em;
+  margin-top: 3em;
+}
+#newsletter #onClickNewsletter{
+  padding-top: 10px;
+  color: #f5d365;
+}
+#newsletter .iscriviti #mainFooter {
+  padding: 2.5em 0;
+  text-align: center;
+}
+#newsletter .iscriviti .links {
+  color: #8b8b9f;
+  font-size: .75em;
+  text-decoration: none;
+  margin: 0 .5em;
+}
+#newsletter .iscriviti:hover {
+  color: #f5d365;
+}
+.newsP{
+  color: #f5d365;
+}
+
+/* Footer */
+#mainFooter{
+  padding: 2.5em 0;
+  text-align: center;
+}
+#mainFooter .links{
+  display: inline;
+}
+#mainFooter .links a{
+  color: #8b8b9f;
+  font-size: .75em;
+  text-decoration: none;
+  margin: 0 .5em;
+}
+#mainFooter .links a:hover{
+  color: #f5d365;
+}
+
+/* Mobile*/
+@media screen and (max-width: 768px) {
+  .mainNav {
+    display: none;
+  }
+  .mainNav.active {
+    display: block;
+    width: 100%;
+  }
+  .mainNav.active a {
+    display: block;
+    padding: 1em 0;
+    border-bottom: 1px solid #E9E9E9;
+  }
+  .mainNav.active a:last-child {
+    border-bottom: none;
+  }
+  .navbarToggle {
+    display: block;
+    float: right;
+  }
+  .navbarToggle i {
+    font-size: 1.5em;
+    color: #252529;
+    padding-top: .6em;
+  }
+  /*banner sotto menu*/
+  #banner {
+    background-image: url(https://a-static.besthdwallpaper.com/palloncino-rosso-di-pennywise-sfondo-3000x2000-9871_42.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #banner p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  /*scheda film*/
+  .containerSF{
+    display: block;
+    border: 2px solid #e6e9ec;
+    border-radius: 20px;
+    margin: 30px;
+    background-color: #e6e9ec;
+}
+.titleSF{
+    display: block;
+    font-size: 1.5em;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.dateSF, .yearSF, .timeSF, .ratingsSF, .genresSF, .authorSF, .collaborationSF, .distributionSF, .reviewSF{
+    margin-left: 20px;
+    display: block;
+}
+  .trilerSF{
+    margin: 20px;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+.trilerSF iframe,
+.trilerSF object,
+.trilerSF embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+}
+/*# sourceMappingURL=style.css.map */
